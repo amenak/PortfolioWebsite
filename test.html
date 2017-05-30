@@ -1,10 +1,21 @@
 <!DOCTYPE HTML> <!--this is how you start-->
+<!--to add bootstrap to your website-->
 
 <html lang= "en"> <!--html tags closing and ending. you have to set up the language--> 
  <!--title of the page-->
 
 <head>
 	<meta charset="utf-8"/> <!--meta means other information your website needs-->
+	<meta http-equiv="X-UA-Compatabile" content="IE=edge">
+	<meta name="viewport" content="width = device-width, initial-scale =1">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 	<title>Amena Khan portfolio</title> 
 </head> 
 
@@ -17,7 +28,6 @@
 		.header-style{
 			color:#fff800;
 			font-size: 70px;
-			text-align:center;
 			padding-top: -10px;
 			padding-bottom: -5px;
 			margin-top: 0px;
@@ -28,7 +38,7 @@
 			border-width: 5px;
 			border-style: solid;
 			border-color: #ddccdf;
-			border-radius: 50%;
+			border-radius: 0%;
 		}
 		
 		.pink-background{
@@ -38,11 +48,9 @@
 		/*this is making changes to an id*/
 		#experience-list{
 			border-style: solid;
-			margin-left: 800px; /*controls how far away from the sides of screen it will go*/
-			padding-left: 100px;
-			padding-right: 10px;
 			color: #e9a401;
 			text-align: left;
+			font-family: monospace;
 		}
 		
 		
@@ -53,48 +61,52 @@
 		
 		
 	</style>
-	
-	<h1 class="header-style"> Amena Khan</h1>
-	
-	<!--how can i make this image rotate and align right?-->
-	<a href=#><img src="C:\Users\amena\Pictures\smileHeadshot.jpg" style="width:250px; transform:rotate(90deg);" alt="a picture of myself" 
-     class="headshot-border">
-	</a>
-	
+	<div class="container-fluid">
+		<h1 class="header-style text-center"> Amena Khan</h1>
 		
-	<h2 style="text-align:right"> Here's My Experience</h2> 
-	<p style="text-align:right"> Look at my<a href=# style="color:red"> resume.</a> </p>
-	
-	<div class="pink-background" id="experience-list">
-	<h3 style="font-size: 20px">CUNYCodes</h3>
-	<p> I created ParkMatch, a fully functional android application.
-	It uses Android for its front end and firebase for its backend.
-	I did this on a team of five and we used the agile/scrum methodology.<br>
-	You can find it <a href="https://github.com/cunytech/parkingfinder" style="color:red">here.</a>
-	</p>
-	<ul style="font-family:Arial;">
-		<li> ParkMatch helps users find parking in their area. </li>
-		<li> It is a crowdsourced solution to finding parking. </li>
-		<li> It is unique because it has a gamified element to it </li>
-		<li> Technology used: Android, Firebase, XML </li>
-	</ul>
+		<div class="row">
+			<div class="col-md-6" style="border-style:solid">
+				<a href=#><img src="C:\Users\amena\Pictures\filter.jpg" alt="a picture of myself" 
+				 class="headshot-border img-responsive">
+				</a>
+			</div>
+			
+			<div class="col-md-6" style="border-style:solid">	
+				<h2 style="text-align:right"> Here's My Experience</h2> 
+				<p style="text-align:right"> Look at my<a href=# style="color:red"> resume.</a> </p>
+				
+				<div class="pink-background" id="experience-list">
+					<h3 style="font-size: 20px">CUNYCodes</h3>
+					<p> I created ParkMatch, a fully functional android application.
+					It uses Android for its front end and firebase for its backend.
+					I did this on a team of five and we used the agile/scrum methodology.<br>
+					You can find it <a href="https://github.com/cunytech/parkingfinder" style="color:red">here.</a>
+					</p>
+					<ul style="font-family:Arial;">
+						<li> ParkMatch helps users find parking in their area. </li>
+						<li> It is a crowdsourced solution to finding parking. </li>
+						<li> It is unique because it has a gamified element to it </li>
+						<li> Technology used: Android, Firebase, XML </li>
+					</ul>
+				</div>
+			</div>
+		
+		</div>
+		
+		<!--consider creating a list of your expereinces. how do i align lists to the right?-->
+		
+		<form action="C:\Users\amena\SCHOOL\Summer17\PortfolioWebsite\questions.txt">
+			<input type="text" placeholder="got questions?">
+			<button type="submit" class="btn">Send!</button>
+			<p style="text-align:left">What words describe me?</p>
+			<label>
+				<input type="checkbox" name="hire"> in good shape</label>
+			<label>
+				<input type="checkbox" name="hire"> you won't find a job </label>
+			<label>
+				<input type="checkbox" name="hire"> hirable </label>		
+		</form>
 	</div>
-	
-	<!--consider creating a list of your expereinces. how do i align lists to the right?-->
-	
-	
-	<form action="C:\Users\amena\SCHOOL\questions.txt">
-		<input type="text" placeholder="got questions?">
-		<button type="submit">Send!</button>
-		<p style="text-align:left">What words describe me?</p>
-		<label>
-			<input type="checkbox" name="hire"> in good shape</label>
-		<label>
-			<input type="checkbox" name="hire"> you won't find a job </label>
-		<label>
-			<input type="checkbox" name="hire"> hirable </label>		
-	</form>
-	
 </body>
 
 </html>
