@@ -1,0 +1,100 @@
+<!DOCTYPE HTML> <!--this is how you start-->
+
+<html lang= "en"> <!--html tags closing and ending. you have to set up the language--> 
+ <!--title of the page-->
+
+<head>
+	<meta charset="utf-8"/> <!--meta means other information your website needs-->
+	<title>Amena Khan portfolio</title> 
+</head> 
+
+<body>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Bubbler+One|Oswald" rel="stylesheet">	
+	
+	<style> 
+		/*this is a class. you must put a "." start of this class*/
+		.header-style{
+			color:#fff800;
+			font-size: 70px;
+			text-align:center;
+			padding-top: -10px;
+			padding-bottom: -5px;
+			margin-top: 0px;
+			margin-bottom: 10px;
+		}
+		
+		.headshot-border{
+			border-width: 5px;
+			border-style: solid;
+			border-color: #ddccdf;
+			border-radius: 50%;
+		}
+		
+		.pink-background{
+			background-color: #680894;
+		}
+		
+		/*this is making changes to an id*/
+		#experience-list{
+			border-style: solid;
+			margin-left: 800px; /*controls how far away from the sides of screen it will go*/
+			padding-left: 100px;
+			padding-right: 10px;
+			color: #e9a401;
+			text-align: left;
+		}
+		
+		
+		h1{color:purple; text-align:center; font-size:50px; font-family:lobster;}
+		h2{color:red; text-align:center; font-family: Oswald, Monospace;} /*this is how you comment in css*/ 		
+		p {font-size: 16px; font-family: bubbler, Arial; text-align:left; }
+		body{background-color:#30013e; font-family: monospace; color:#e9a401;}
+		
+		
+	</style>
+	
+	<h1 class="header-style"> Amena Khan</h1>
+	
+	<!--how can i make this image rotate and align right?-->
+	<a href=#><img src="C:\Users\amena\Pictures\smileHeadshot.jpg" style="width:250px; transform:rotate(90deg);" alt="a picture of myself" 
+     class="headshot-border">
+	</a>
+	
+		
+	<h2 style="text-align:right"> Here's My Experience</h2> 
+	<p style="text-align:right"> Look at my<a href=# style="color:red"> resume.</a> </p>
+	
+	<div class="pink-background" id="experience-list">
+	<h3 style="font-size: 20px">CUNYCodes</h3>
+	<p> I created ParkMatch, a fully functional android application.
+	It uses Android for its front end and firebase for its backend.
+	I did this on a team of five and we used the agile/scrum methodology.<br>
+	You can find it <a href="https://github.com/cunytech/parkingfinder" style="color:red">here.</a>
+	</p>
+	<ul style="font-family:Arial;">
+		<li> ParkMatch helps users find parking in their area. </li>
+		<li> It is a crowdsourced solution to finding parking. </li>
+		<li> It is unique because it has a gamified element to it </li>
+		<li> Technology used: Android, Firebase, XML </li>
+	</ul>
+	</div>
+	
+	<!--consider creating a list of your expereinces. how do i align lists to the right?-->
+	
+	
+	<form action="C:\Users\amena\SCHOOL\questions.txt">
+		<input type="text" placeholder="got questions?">
+		<button type="submit">Send!</button>
+		<p style="text-align:left">What words describe me?</p>
+		<label>
+			<input type="checkbox" name="hire"> in good shape</label>
+		<label>
+			<input type="checkbox" name="hire"> you won't find a job </label>
+		<label>
+			<input type="checkbox" name="hire"> hirable </label>		
+	</form>
+	
+</body>
+
+</html>
